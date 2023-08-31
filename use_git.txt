@@ -1,0 +1,23 @@
+# show branch and changes
+git status
+# tell git I want to change myfile.txt (stage myfile.txt)
+git add myfile.txt
+# apply changes
+git commit -m "fix typos"
+# show history
+git log [--color-words -4 --oneline]
+# show difference between unstaged file and most recent commit
+# or between unstaged and staged file (to be tested)
+git diff
+# difference between staged and most recent commit
+git diff --staged
+# stage all and commit (do not use because of forgotten changes)
+git commit -a
+# compare with secondmost recent commit. most recent commit = HEAD
+git diff HEAD~1 myfile.txt
+# show changes and message of a commit
+git show 193f32e myfile.txt
+# reset files to most recent commit and put them in staging area
+git checkout HEAD myfile.txt
+# ignore files: "*.dat" in  .gitignore
+
