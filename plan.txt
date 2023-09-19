@@ -1,6 +1,7 @@
 Protists
+[] Find out deadlines
 [] Read paper protists_3d
-[] Read other papers given by Guillermina
+[] Read 3 other papers in predator prey project (focus on methods and measures)
 [] Look at microscopes of colleagues, ask for tips, tricks and pitfalls
 [] Order parts
 [] Build paramecium seperation
@@ -8,3 +9,8 @@ Protists
 [] Write report
 [] Build microscope
 [] Troubleshooting 
+
+Paramecium
+[] get pumps and tubings to work
+[] ask Daphne to make a cell in real scale
+[] make a uniform field with pins or platinum electrodes
