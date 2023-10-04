@@ -1,0 +1,67 @@
+2021-12-20 13:53:36.011 | INFO     | __main__:<module>:39 - Starting the PlanktoScope python script!
+2021-12-20 13:53:36.105 | INFO     | planktoscope.mqtt:<module>:60 - planktoscope.mqtt is loaded
+2021-12-20 13:53:36.181 | INFO     | planktoscope.stepper:<module>:15 - planktoscope.stepper is loaded
+2021-12-20 13:53:36.213 | INFO     | planktoscope.imager:<module>:49 - planktoscope.imager is loaded
+2021-12-20 13:53:41.094 | INFO     | planktoscope.segmenter:<module>:59 - planktoscope.segmenter is loaded
+2021-12-20 13:53:41.126 | INFO     | planktoscope.display:<module>:13 - planktoscope.display is loading
+2021-12-20 13:53:41.127 | INFO     | __main__:<module>:74 - Welcome!
+2021-12-20 13:53:41.128 | INFO     | __main__:<module>:76 - Initialising signals handling and sanitizing the directories (step 1/4)
+2021-12-20 13:53:41.131 | INFO     | __main__:<module>:113 - This PlanktoScope unique ID is 100000000b5b5594
+2021-12-20 13:53:41.132 | INFO     | __main__:<module>:115 - This PlanktoScope unique name is Bababui Lakouqai
+2021-12-20 13:53:41.134 | INFO     | __main__:<module>:123 - Starting the stepper control process (step 2/4)
+2021-12-20 13:53:41.135 | INFO     | planktoscope.stepper:__init__:180 - Initialising the stepper process
+2021-12-20 13:53:41.137 | DEBUG    | planktoscope.stepper:__init__:190 - Hardware configuration loaded is {'stepper_reverse': False, 'microsteps': 32, 'focus_steps_per_mm': 40, 'pump_steps_per_ml': 507, 'focus_max_speed': 0.5, 'pump_max_speed': 30, 'stepper_type': 'adafruit', 'wb_red_gain': 2, 'wb_blue_gain': 1.41, 'analog_gain': 1, 'digital_gain': 1, 'acq_fnumber_objective': 16}
+2021-12-20 13:53:41.138 | INFO     | planktoscope.stepper:__init__:217 - Loading the adafruit configuration
+2021-12-20 13:53:41.183 | INFO     | planktoscope.stepper:__init__:257 - Stepper initialisation is over
+2021-12-20 13:53:41.196 | INFO     | __main__:<module>:128 - Starting the imager control process (step 3/4)
+2021-12-20 13:53:41.199 | INFO     | planktoscope.imager:__init__:67 - planktoscope.imager is initialising
+2021-12-20 13:53:41.199 | INFO     | planktoscope.stepper:run:490 - The stepper control process has been started in process 1142
+2021-12-20 13:53:41.202 | DEBUG    | planktoscope.imager:__init__:73 - Hardware configuration loaded is {'stepper_reverse': False, 'microsteps': 32, 'focus_steps_per_mm': 40, 'pump_steps_per_ml': 507, 'focus_max_speed': 0.5, 'pump_max_speed': 30, 'stepper_type': 'adafruit', 'wb_red_gain': 2, 'wb_blue_gain': 1.41, 'analog_gain': 1, 'digital_gain': 1, 'acq_fnumber_objective': 16}
+2021-12-20 13:53:41.202 | INFO     | planktoscope.mqtt:connect:88 - trying to connect to 127.0.0.1:1883
+2021-12-20 13:53:41.204 | DEBUG    | planktoscope.imager.raspimjpeg:__init__:32 - The status file does not exists, creating now
+2021-12-20 13:53:41.206 | DEBUG    | planktoscope.imager.raspimjpeg:__init__:43 - The pipe does not exists, creating now
+2021-12-20 13:53:41.208 | DEBUG    | planktoscope.imager.raspimjpeg:start:52 - Starting up raspimjpeg
+2021-12-20 13:53:41.217 | SUCCESS  | planktoscope.mqtt:on_connect:115 - actuator_client connected to 127.0.0.1:1883! - 0: Connection successful
+2021-12-20 13:53:41.220 | SUCCESS  | planktoscope.stepper:run:506 - Stepper is READY!
+2021-12-20 13:53:41.223 | SUCCESS  | planktoscope.mqtt:on_subscribe:126 - actuator_client subscribed to actuator/#! - mid:2 qos:(0,)
+2021-12-20 13:53:41.235 | DEBUG    | planktoscope.imager.raspimjpeg:__parse_output_for:122 - Parsing the output for Camera Name for 5s
+2021-12-20 13:53:41.337 | DEBUG    | planktoscope.imager.raspimjpeg:__parse_output_for:122 - Parsing the output for Camera Max Width: for 5s
+2021-12-20 13:53:41.338 | DEBUG    | planktoscope.imager.raspimjpeg:__parse_output_for:122 - Parsing the output for Camera Max Height for 5s
+2021-12-20 13:53:41.339 | DEBUG    | planktoscope.imager.raspimjpeg:__wait_for_output:151 - Waiting for Starting command loop for 5s
+2021-12-20 13:53:41.542 | INFO     | planktoscope.imager:__init__:146 - Initialising the camera with the default settings
+2021-12-20 13:53:41.544 | DEBUG    | planktoscope.imager.raspimjpeg:resolution:257 - Setting the resolution to (3280, 2464)
+2021-12-20 13:53:41.545 | DEBUG    | planktoscope.imager.raspimjpeg:__send_command:220 - Sending the command [px 1640 1232 15 15 3280 2464 01] to raspimjpeg
+2021-12-20 13:53:41.648 | DEBUG    | planktoscope.imager.raspimjpeg:iso:288 - Setting the iso number to 100
+2021-12-20 13:53:41.650 | DEBUG    | planktoscope.imager.raspimjpeg:__send_command:220 - Sending the command [is 100] to raspimjpeg
+2021-12-20 13:53:41.653 | DEBUG    | planktoscope.imager.raspimjpeg:__wait_for_output:151 - Waiting for Change: iso for 5s
+2021-12-20 13:53:42.057 | DEBUG    | planktoscope.imager.raspimjpeg:shutter_speed:309 - Setting the shutter speed to 1
+2021-12-20 13:53:42.059 | DEBUG    | planktoscope.imager.raspimjpeg:__send_command:220 - Sending the command [ss 1] to raspimjpeg
+2021-12-20 13:53:42.063 | DEBUG    | planktoscope.imager.raspimjpeg:__wait_for_output:151 - Waiting for Change: shutter_speed for 5s
+2021-12-20 13:53:42.266 | DEBUG    | planktoscope.imager.raspimjpeg:exposure_mode:332 - Setting the exposure mode to auto
+2021-12-20 13:53:42.269 | DEBUG    | planktoscope.imager.raspimjpeg:__send_command:220 - Sending the command [em auto] to raspimjpeg
+2021-12-20 13:53:42.375 | DEBUG    | planktoscope.imager.raspimjpeg:white_balance:368 - Setting the white balance mode to off
+2021-12-20 13:53:42.377 | DEBUG    | planktoscope.imager.raspimjpeg:__send_command:220 - Sending the command [wb off] to raspimjpeg
+2021-12-20 13:53:42.481 | DEBUG    | planktoscope.imager.raspimjpeg:white_balance_gain:403 - Setting the white balance mode to (200, 140)
+2021-12-20 13:53:42.483 | DEBUG    | planktoscope.imager.raspimjpeg:__send_command:220 - Sending the command [ag 200 140] to raspimjpeg
+2021-12-20 13:53:42.587 | DEBUG    | planktoscope.imager.raspimjpeg:image_gain:430 - Setting the analog gain to (100, 100)
+2021-12-20 13:53:42.588 | DEBUG    | planktoscope.imager.raspimjpeg:__send_command:220 - Sending the command [ig 100 100] to raspimjpeg
+2021-12-20 13:53:42.591 | SUCCESS  | planktoscope.imager:__init__:209 - planktoscope.imager is initialised and ready to go!
+2021-12-20 13:53:42.621 | INFO     | __main__:<module>:138 - Starting the segmenter control process (step 4/4)
+2021-12-20 13:53:42.628 | INFO     | planktoscope.segmenter:__init__:77 - planktoscope.segmenter is initialising
+2021-12-20 13:53:42.630 | INFO     | planktoscope.imager:run:713 - The imager control thread has been started in process 1165
+2021-12-20 13:53:42.633 | SUCCESS  | planktoscope.segmenter:__init__:117 - planktoscope.segmenter is initialised and ready to go!
+2021-12-20 13:53:42.637 | INFO     | planktoscope.mqtt:connect:88 - trying to connect to 127.0.0.1:1883
+2021-12-20 13:53:42.667 | INFO     | __main__:<module>:155 - Starting the display module
+2021-12-20 13:53:42.678 | INFO     | planktoscope.segmenter:run:992 - The segmenter control thread has been started in process 1166
+2021-12-20 13:53:42.687 | INFO     | planktoscope.mqtt:connect:88 - trying to connect to 127.0.0.1:1883
+2021-12-20 13:53:42.689 | SUCCESS  | planktoscope.mqtt:on_connect:115 - imager_client connected to 127.0.0.1:1883! - 0: Connection successful
+2021-12-20 13:53:42.692 | INFO     | planktoscope.imager:run:735 - Starting the streaming server thread
+2021-12-20 13:53:42.695 | SUCCESS  | planktoscope.mqtt:on_subscribe:126 - imager_client subscribed to imager/#! - mid:2 qos:(0,)
+2021-12-20 13:53:42.705 | SUCCESS  | planktoscope.imager:run:751 - Camera is READY!
+2021-12-20 13:53:42.728 | SUCCESS  | planktoscope.mqtt:on_connect:115 - segmenter_client connected to 127.0.0.1:1883! - 0: Connection successful
+2021-12-20 13:53:42.729 | INFO     | planktoscope.segmenter:run:1003 - Setting up the streaming server thread
+2021-12-20 13:53:42.734 | SUCCESS  | planktoscope.mqtt:on_subscribe:126 - segmenter_client subscribed to segmenter/#! - mid:2 qos:(0,)
+2021-12-20 13:53:42.742 | SUCCESS  | planktoscope.segmenter:run:1024 - Segmenter is READY!
+2021-12-20 13:53:42.797 | INFO     | planktoscope.display:display_text:48 - Displaying message Bababui Lakouqai
+2021-12-20 13:53:42.949 | SUCCESS  | planktoscope.display:__init__:31 - planktoscope.display is ready!
+2021-12-20 13:53:42.952 | SUCCESS  | __main__:<module>:158 - Looks like everything is set up and running, have fun!

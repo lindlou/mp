@@ -1,16 +1,67 @@
+TODO []
+DONE [x]
+Not to do anymore [-]
+Maybe to do [?]
+To do later [o]
+
+Week 3
+0) Understand and document machine vision lenses
+1) Pixels per cell from video
+2) Max FOV from that resolution. 1cm chamber is enough, but 2.5 would be great to also image low res high FOV.
+3) On jupyter, plot whole space of resolution, FOV, WD, f, M
+4) Give some lens options, variable or fixed
+5) Illumination options
+6) 
+
 Protists
-[] Find out deadlines
-[] Read paper protists_3d
-[] Read 3 other papers in predator prey project (focus on methods and measures)
-[] Look at microscopes of colleagues, ask for tips, tricks and pitfalls
-[] Order parts
-[] Build paramecium seperation
-[] Build planktoscope
-[] Write report
-[] Build microscope
-[] Troubleshooting 
+[x] Read paper protists_3d
+[] Get online material of paper
+[] Create parts list (raspi cams & lenses)
+	[x] read about microscopes, choose lens according to constraints
+	[] find breadboard on thorlabs
+	[o] easily swappable light sources. Bright but low power.
+	[x] best camera and lens for maximum FOV for given pixels/cell (ask Ekin/Daphne). Seeing points is enough.
+	[x] find precise thermometer & peltier. look at Retos cooling code
+[] 3D drawing the microscope in solidworks
+[] Set up Jetson Nano. Think about display
+[] Design outer and inner chamber: easy loading, leakproof
+
+
+
+[o] Build microscope
+[o] Troubleshooting 
+
+Building the microscope
+[o] test outer chamber flow with tracer particles
+[o] test sample chamber flow with tracer particles, v_rms(t)
+[o] determine tracking precision (IV. PERFORMANCE)
+[o] determine resolution, FOV, depth of view, resolution (USAF 1951 resolution test chart)
+
+Report (on overleaf for comments)
+[x] inform about page number, format, content etc -> no constraints
+[] Title
+[] Intro: Why study protists, why you need my device (Methods and Measures paper for inspiration)
 
 Paramecium
-[] get pumps and tubings to work
-[] ask Daphne to make a cell in real scale
-[] make a uniform field with pins or platinum electrodes
+[-] get pumps and tubings to work
+[] Magnets ?
+[] Movie of cell without flow
+[?] ask Daphne to make a cell in real scale
+[?] make a uniform field with pins or platinum electrodes
+
+Planktoscope
+[] Tap 12x0.5mm holes for the lenses (at professional workshop)
+[] Tap M2x0.4mm (with romain once the tap arrives)
+[] Heat sink
+[-] Set up software graphically
+[] Maybe connect with ssh and understand the code
+
+Other
+[x] set up plexi bender
+[] Read 3 other papers in predator prey project (focus on methods and measures)
+[x] Talk with Kirsty Wan
+[x] date range for the oral exam
+[] Build planktoscope
+[x] Find out deadlines: 19.1.2024
+[x] Print, sign and send master project form
+[] Ask Roman for lasercutter intro

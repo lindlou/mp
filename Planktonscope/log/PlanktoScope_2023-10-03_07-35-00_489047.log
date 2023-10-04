@@ -1,0 +1,2 @@
+2023-10-03 07:35:00.518 | INFO     | __main__:<module>:39 - Starting the PlanktoScope python script!
+2023-10-03 07:35:00.610 | INFO     | planktoscope.mqtt:<module>:60 - planktoscope.mqtt is loaded

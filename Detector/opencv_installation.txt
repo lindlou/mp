@@ -1,0 +1,26 @@
+1) flash new raspbian
+
+2) configure network:
+
+	sudo nano /etc/dhcpcd.conf
+	
+		# Example static IP configuration:
+		interface eth0
+		static ip_address=128.178.66.39/24
+		#static ip6_address=fd51:42f8:caae:d92e::ff/64
+		static routers=128.178.66.1
+		static domain_name_servers=128.178.15.7 128.178.15.8
+		
+		pimicrosc1 (alias de lplpc4) = 128.178.66.36
+		pimicrosc2 (alias de lplpc5) = 128.178.66.38
+		pimicrosc3 (alias de lplpc6) = 128.178.66.39
+		
+	sudo hostnamectl set-hostname pimicrosc1.epfl.ch
+	
+	reboot
+
+3) pip install numpy==1.25.3
+
+4) sudo apt install libatlas-base-dev (so that importing numpy works)
+
+5) sudo apt-get install python3-opencv

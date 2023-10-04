@@ -1,0 +1,6 @@
+#install latex package
+tlmgr install package_name
+#install language
+tlmgr install babel-french
+# if tlmr doesn't find a package, it is included in a different package
+# look up https://www.ctan.org/pkg/package_name, "Contained in"
